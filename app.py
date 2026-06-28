@@ -18,13 +18,13 @@ st.set_page_config(
 # =============================
 # LOGO
 # =============================
-st.image("Logo.jpg")
+st.image("logo.jpg")
 
 # =============================
 # TIÊU ĐỀ
 # =============================
 st.title("📈 TRỰC QUAN HÓA GIÁ CỔ PHIẾU VÀ KIỂM ĐỊNH MANN-KENDALL")
-st.subheader("ĐỀ TÀI 9 - PHAN THỊ ÁI NHI")
+st.subheader("TS. VŨ ĐỨC BÌNH")
 
 st.markdown("---")
 
@@ -124,6 +124,7 @@ if run:
     ax[0].set_ylabel("VND")
     ax[0].legend()
     ax[0].grid(True)
+
     ax[1].plot(
         df.index,
         df["log_ret"],
@@ -136,7 +137,7 @@ if run:
     ax[1].set_ylabel("Return")
     ax[1].set_xlabel("Date")
     ax[1].legend()
-  ax[1].grid(True)
+    ax[1].grid(True)
 
     plt.tight_layout()
 
